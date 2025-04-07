@@ -25,7 +25,7 @@ Modelo de dados (camadas bronze e silver)
 Na camada gold foi realizada a conversão do campo timestamp, que era do tipo número inteiro, para o tipo datetime e a junção entre as tabelas movies (dimensão) e ratings (fato), utilizando a coluna movieId como chave.
 
 ### Análise
-Posteriormente às etapas de modelagem e carga dos dados, os dados foram manipulados via SQL, diretamente no Databricks, para obtenção das respostas formuladas no objetivo do trabalho.
+Posteriormente às etapas de modelagem e carga, os dados foram manipulados via SQL, diretamente no Databricks, para obtenção das respostas formuladas no objetivo do trabalho.
 
 ### Dicionário de Dados
 O dicionário a seguir descreve os dados disponíveis na base, fornecendo informações sobre cada campo, incluindo seu significado, tipo de dado, domínio esperado e possíveis categorias.
