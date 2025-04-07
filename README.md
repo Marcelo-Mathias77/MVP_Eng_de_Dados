@@ -15,25 +15,26 @@ Contabilizar o número de filmes distintos que receberam pelo menos uma avaliaç
 Esses objetivos fornecem uma visão abrangente da popularidade e qualidade dos filmes e gêneros, assim como a dinâmica temporal das avaliações.
 
 ### Coleta dos Dados
+### Modelagem
+### Carga
+### Análise
 Os dados originais foram obtidos diretamente nas bases de dados do Databricks no seguinte caminho: dbfs:/databricks-datasets/cs100/lab4/data-001/, onde dentificou-se que o dataset tinha 2 tabelas: movies e ratings. Foi necessário identificar o delimitador do arquivo antes da leitura dos mesmos no formato csv. Inicialmente os dados brutos foram salvos na camada bronze. Na camada silver foi realizada a etapa de data quality e verificou-se que, apesar de permitir valor nulos, todos os campos continham dados. Na camada gold foi realizada a junção entre as tabelas movies e ratings, além da conversão do campo timestamp, que era do tipo número inteiro, para o tipo datetime e a junção das tabelas movies e ratings. Posteriormente os dados foram manipulados via SQL, diretamente no Databricks, para obtenção das respostas formuladas no objetivo do trabalho.
 
 ### Dicionário de Dados
 
-### Modelagem
-### Carga
-### Análise
 ### Autoavaliação
-Atualmente, possuo um conhecimento básico em SQL, o que me permite realizar consultas, manipulação e análise de dados de forma fundamental. Essas habilidades serão úteis para extrair informações relevantes do conjunto de dados, realizar filtragens, agregações e cálculos estatísticos simples.
-No entanto, não possuo conhecimento prévio em Databricks, que será uma das ferramentas utilizadas na análise. Isso pode representar um desafio inicial, especialmente no que diz respeito à configuração do ambiente, ao uso de notebooks colaborativos e à execução de operações distribuídas em grandes volumes de dados.
+Antes do início da pós graduação, já trabalhava com análise de dados, usando linguagem M (power query) e DAX e Python, mas sem utilizar as ferramentas propostas para o MVP. 
+O conhecimento em SQL adquirido ao longo do curso, me permitiu realizar consultas, manipulação e análise de dados. 
+Essas habilidades foram úteis para extrair informações relevantes do conjunto de dados, realizar filtragens, agregações e cálculos.
+No entanto, não possuia conhecimento prévio em Databricks, uma das ferramentas utilizadas nesse trabalho. Tal fato representou um desafio inicial, bem com a utilização do spark.
 
-Diante desse cenário, meus principais pontos fortes são:
+Diante desse cenário, identifiquei como pontos fortes:
 - Capacidade de estruturar consultas em SQL para explorar os dados.
-- Facilidade em aprender novas ferramentas e conceitos.
+- Facilidade em aprender novas ferramentas e conceitos, dada a experiência prévia com análise de dados / programação.
 
-Já os desafios incluem:
+Já os desafios incluíram:
 - Familiarização com o ambiente do Databricks e sua interface.
-- Compreensão do funcionamento de Spark SQL e PySpark para lidar com grandes volumes de dados.
-- Aprendizado de boas práticas para otimizar consultas e melhorar a performance no processamento de dados distribuído.
+- Compreensão do funcionamento de Spark SQL e PySpark.
 
-Para superar essas dificuldades, pretendo explorar tutoriais, documentações e cursos introdutórios sobre Databricks e PySpark, além de praticar a execução de queries e scripts dentro da plataforma para consolidar o aprendizado.
+Para superar as dificuldades expostas acima, explorei tutoriais, documentações, cursos introdutórios sobre Databricks e PySpark, tirei dúvidas com colegas, além de praticar a execução de queries e scripts dentro da plataforma para consolidar o aprendizado.
 
