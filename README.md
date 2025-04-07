@@ -28,6 +28,7 @@ Na camada gold foi realizada a conversão do campo timestamp, que era do tipo n�
 Posteriormente às etapas de modelagem e carga dos dados, os dados foram manipulados via SQL, diretamente no Databricks, para obtenção das respostas formuladas no objetivo do trabalho.
 
 ### Dicionário de Dados
+O dicinário a seguir descreve os dados disponíveis na base, fornecendo informações sobre cada campo, incluindo seu significado, tipo de dado, domínio esperado e possíveis categorias.
 ![Catálogo de dados](https://github.com/user-attachments/assets/ca12f31f-b591-45e8-92d1-c631a17cf227)
 
 ### Autoavaliação
