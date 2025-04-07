@@ -18,6 +18,7 @@ Os dados originais foram obtidos diretamente entre as bases de dados gratuitas d
 Foi necessário identificar o delimitador do arquivo antes da leitura dos mesmos no formato csv. Inicialmente os dados brutos foram salvos na camada bronze. Na camada silver foi realizada a etapa de data quality e verificou-se que, apesar de permitir valor nulos, todos os campos continham dados, conforme evidenciado nas contagens de valores nulos nas tabelas movies e ratings. Não foram encontrados outros problemas com os dados que pudessem comprometer a qualidade da análise. 
 
 Modelo de dados (camadas bronze e silver)
+
 ![Modelo de dados](https://github.com/user-attachments/assets/33939785-ad83-42aa-8c9b-7ef357ee2523)
 
 
