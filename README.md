@@ -30,7 +30,8 @@ Posteriormente às etapas de modelagem e carga dos dados, os dados foram manipul
 ### Dicionário de Dados
 O dicionário a seguir descreve os dados disponíveis na base, fornecendo informações sobre cada campo, incluindo seu significado, tipo de dado, domínio esperado e possíveis categorias.
 
-![Catálogo de dados](https://github.com/user-attachments/assets/ca12f31f-b591-45e8-92d1-c631a17cf227)
+![Modelo de dados](https://github.com/user-attachments/assets/863d2353-2677-477d-9387-92306d01b604)
+
 
 ### Autoavaliação
 Antes do início da pós graduação, já trabalhava com análise de dados, usando linguagem M (power query), DAX e Python, mas sem utilizar as ferramentas propostas para o MVP. 
