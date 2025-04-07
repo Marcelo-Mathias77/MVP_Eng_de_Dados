@@ -1,27 +1,33 @@
 # MVP Engenharia de Dados
 
 ### Objetivo
-O objetivo desta análise é explorar e obter insights sobre um conjunto de dados de avaliações de filmes, com base nas informações de filmes, usuários, avaliações e gêneros. A partir do conjunto de dados, deseja-se responder à seguintes perguntas:
-1. Qual o filme com mais avaliações (contagem;
-2. Identificar o título do filme que recebeu o maior número de avaliações, com base na contagem de registros de avaliação (rating);
-3. Qual o filme com a melhor avaliação (média);
-4. Determinar o filme com a maior média de avaliações, fornecendo o título que obteve a melhor nota média entre todos os filmes.
-5. Gênero com a melhor avaliação (média);
-6. Analisar os gêneros de filmes e identificar aquele que obteve a maior média de avaliações, permitindo entender quais gêneros são mais bem avaliados pelos usuários;
-7. Total de filmes avaliado;
-Contabilizar o número de filmes distintos que receberam pelo menos uma avaliação, fornecendo uma visão geral da quantidade de filmes avaliados no dataset.
-8. Total de avaliações por ano;
-9. Calcular o número total de avaliações feitas a cada ano, a partir da coluna timestamp, permitindo observar a distribuição de avaliações ao longo do tempo.
-Esses objetivos fornecem uma visão abrangente da popularidade e qualidade dos filmes e gêneros, assim como a dinâmica temporal das avaliações.
+O objetivo desta análise é explorar e obter insights sobre um conjunto de dados de avaliações de filmes, com base nas informações de filmes, usuários, avaliações e gêneros. 
+A partir do conjunto de dados, deseja-se responder à seguintes perguntas:
+1. Quais os filmes com maior número de avaliações?
+2. Quais os filmes (títulos) com a melhor avaliação?
+3. Qual o gênero com a melhor avaliação?
+4. Qual o total de Filmes avaliados?
+5. Qual o total de usuários que avaliaram filmes?
+6. Qual o total de avaliações por ano?
+7.  Quais os filmes com as piores avaliações?
 
 ### Coleta dos Dados
-### Modelagem
-### Carga
+Os dados originais foram obtidos diretamente entre as bases de dados gratuitas do Databricks no seguinte caminho: dbfs:/databricks-datasets/cs100/lab4/data-001/, onde dentificou-se que o dataset escolhido tinha 2 tabelas: movies e ratings.
+
+### Modelagem / Carga
+Foi necessário identificar o delimitador do arquivo antes da leitura dos mesmos no formato csv. Inicialmente os dados brutos foram salvos na camada bronze. Na camada silver foi realizada a etapa de data quality e verificou-se que, apesar de permitir valor nulos, todos os campos continham dados, conforme evidenciado nas contagens de valores nulos nas tabelas movies e ratings. Não foram encontrados outros problemas com os dados que pudessem comprometer a qualidade da análise. 
+
+Modelo de dados (camadas bronze e silver)
+![Modelo de dados](https://github.com/user-attachments/assets/33939785-ad83-42aa-8c9b-7ef357ee2523)
+
+
+Na camada gold foi realizada a conversão do campo timestamp, que era do tipo número inteiro, para o tipo datetime e a junção entre as tabelas movies (dimensão) e ratings (fato), utilizando a coluna movieId como chave.
+
 ### Análise
-Os dados originais foram obtidos diretamente nas bases de dados do Databricks no seguinte caminho: dbfs:/databricks-datasets/cs100/lab4/data-001/, onde dentificou-se que o dataset tinha 2 tabelas: movies e ratings. Foi necessário identificar o delimitador do arquivo antes da leitura dos mesmos no formato csv. Inicialmente os dados brutos foram salvos na camada bronze. Na camada silver foi realizada a etapa de data quality e verificou-se que, apesar de permitir valor nulos, todos os campos continham dados. Na camada gold foi realizada a junção entre as tabelas movies e ratings, além da conversão do campo timestamp, que era do tipo número inteiro, para o tipo datetime e a junção das tabelas movies e ratings. Posteriormente os dados foram manipulados via SQL, diretamente no Databricks, para obtenção das respostas formuladas no objetivo do trabalho.
+Posteriormente às etapas de modelagem e carga dos dados, os dados foram manipulados via SQL, diretamente no Databricks, para obtenção das respostas formuladas no objetivo do trabalho.
 
 ### Dicionário de Dados
-![Movies](https://github.com/user-attachments/assets/acc3dc13-2e39-41d2-9019-8aba5aea873f)
+![Catálogo de dados](https://github.com/user-attachments/assets/ca12f31f-b591-45e8-92d1-c631a17cf227)
 
 ### Autoavaliação
 Antes do início da pós graduação, já trabalhava com análise de dados, usando linguagem M (power query), DAX e Python, mas sem utilizar as ferramentas propostas para o MVP. 
