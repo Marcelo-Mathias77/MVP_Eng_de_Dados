@@ -28,7 +28,6 @@ No entanto, não possuo conhecimento prévio em Databricks, que será uma das fe
 
 Diante desse cenário, meus principais pontos fortes são:
 - Capacidade de estruturar consultas em SQL para explorar os dados.
-- Conhecimento básico de Python para manipulação e visualização de dados com bibliotecas como Pandas e Matplotlib.
 - Facilidade em aprender novas ferramentas e conceitos.
 
 Já os desafios incluem:
