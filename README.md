@@ -21,6 +21,7 @@ Esses objetivos fornecem uma visão abrangente da popularidade e qualidade dos f
 Os dados originais foram obtidos diretamente nas bases de dados do Databricks no seguinte caminho: dbfs:/databricks-datasets/cs100/lab4/data-001/, onde dentificou-se que o dataset tinha 2 tabelas: movies e ratings. Foi necessário identificar o delimitador do arquivo antes da leitura dos mesmos no formato csv. Inicialmente os dados brutos foram salvos na camada bronze. Na camada silver foi realizada a etapa de data quality e verificou-se que, apesar de permitir valor nulos, todos os campos continham dados. Na camada gold foi realizada a junção entre as tabelas movies e ratings, além da conversão do campo timestamp, que era do tipo número inteiro, para o tipo datetime e a junção das tabelas movies e ratings. Posteriormente os dados foram manipulados via SQL, diretamente no Databricks, para obtenção das respostas formuladas no objetivo do trabalho.
 
 ### Dicionário de Dados
+![Movies](https://github.com/user-attachments/assets/acc3dc13-2e39-41d2-9019-8aba5aea873f)
 
 ### Autoavaliação
 Antes do início da pós graduação, já trabalhava com análise de dados, usando linguagem M (power query), DAX e Python, mas sem utilizar as ferramentas propostas para o MVP. 
