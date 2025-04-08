@@ -46,5 +46,6 @@ Já os desafios incluíram:
 - Familiarização com o ambiente do Databricks e sua interface.
 - Compreensão do funcionamento de Spark SQL e PySpark.
 
-Para superar as dificuldades expostas acima, explorei tutoriais, documentações, cursos introdutórios sobre Databricks e PySpark, tirei dúvidas com colegas, além de praticar a execução de queries e scripts dentro da plataforma para consolidar o aprendizado.
+Para superar as dificuldades expostas acima, explorei tutoriais, documentações, cursos introdutórios sobre Databricks e PySpark, tirei dúvidas com colegas, além de praticar a execução de queries e scripts dentro da plataforma.
+Para consolidar o aprendizado, pretendo continuar buscando formas para melhorar a qualidade das minhas entregas futuras.
 
