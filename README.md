@@ -21,7 +21,7 @@ Modelo de dados (camadas bronze e silver)
 ![Modelo de dados](https://github.com/user-attachments/assets/33939785-ad83-42aa-8c9b-7ef357ee2523)
 
 
-Na camada gold foi realizada a junção entre as tabelas movies (dimensão) e ratings (fato), utilizando a coluna movieId como chave e a conversão do campo timestamp, que era do tipo número inteiro, para o tipo datetime. Após isso foi criada uma tabela gold consolidando as duas tabelas (gold.movies_ratings).
+Na camada gold foi realizada a junção entre as tabelas movies (dimensão) e ratings (fato), utilizando a coluna movieId como chave, além da conversão do campo timestamp, que era do tipo número inteiro, para o tipo datetime. Após isso foi criada uma tabela gold consolidando as duas tabelas (gold.movies_ratings).
 
 ### Análise
 Posteriormente às etapas de carga e modelagem, os dados foram manipulados via SQL, diretamente no Databricks, para obtenção das respostas às perguntas que foram formuladas no objetivo desse trabalho.
