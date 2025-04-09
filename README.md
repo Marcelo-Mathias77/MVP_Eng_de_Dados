@@ -25,7 +25,7 @@ Na camada gold foi realizada a junção entre as tabelas movies e ratings, utili
 
 ### Análise
 Posteriormente às etapas de carga e modelagem, os dados foram manipulados via SQL, diretamente no Databricks, para obtenção das respostas às perguntas que foram formuladas no objetivo desse trabalho.
-A análise realizada encontra-se nesse repositório ou nesse link: (https://community.cloud.databricks.com/editor/notebooks/816507647137833?o=908816867272057).
+A análise realizada encontra-se nesse repositório ou nesse link: (https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/908816867272057/816507647137833/1974515297805925/latest.html).
 
 ### Dicionário de Dados
 O dicionário a seguir descreve os dados disponíveis na tabela gold.movies_ratings, fornecendo informações sobre cada campo, incluindo seu significado, tipo de dado, domínio esperado e possíveis categorias.
