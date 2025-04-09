@@ -1,7 +1,7 @@
 # MVP Engenharia de Dados
 
 ### Objetivo
-O objetivo desta análise é explorar e obter insights sobre um conjunto de dados de avaliações de filmes, com base nas informações de filmes, usuários, avaliações e gêneros. 
+O objetivo desta análise é explorar e obter insights sobre um conjunto de dados sobre avaliações de filmes, com base nas informações de filmes, usuários, avaliações e gêneros. 
 A partir do conjunto de dados, deseja-se responder à seguintes perguntas:
 1. Quais os filmes com maior número de avaliações?
 2. Quais os filmes (títulos) com a melhor avaliação?
@@ -25,6 +25,7 @@ Na camada gold foi realizada a junção entre as tabelas movies e ratings, utili
 
 ### Análise
 Posteriormente às etapas de carga e modelagem, os dados foram manipulados via SQL, diretamente no Databricks, para obtenção das respostas às perguntas que foram formuladas no objetivo desse trabalho.
+A análise realizada encontra-se nesse repositório ou nesse link: (https://community.cloud.databricks.com/editor/notebooks/816507647137833?o=908816867272057).
 
 ### Dicionário de Dados
 O dicionário a seguir descreve os dados disponíveis na tabela gold.movies_ratings, fornecendo informações sobre cada campo, incluindo seu significado, tipo de dado, domínio esperado e possíveis categorias.
