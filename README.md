@@ -12,23 +12,22 @@ A partir do conjunto de dados, deseja-se responder à seguintes perguntas:
 7.  Quais os filmes com as piores avaliações?
 
 ### Coleta dos Dados
-Os dados originais foram obtidos diretamente entre as bases de dados gratuitas do Databricks no seguinte caminho: dbfs:/databricks-datasets/cs100/lab4/data-001/, onde dentificou-se que o dataset escolhido tinha 2 tabelas: movies e ratings.
+Os dados originais foram obtidos diretamente entre as bases de dados do Databricks no seguinte caminho: dbfs:/databricks-datasets/cs100/lab4/data-001/, onde identificou-se que o dataset escolhido tinha 2 tabelas: movies e ratings.
 
-### Modelagem / Carga
-Foi necessário identificar o delimitador do arquivo antes da leitura dos mesmos no formato csv. Inicialmente os dados brutos foram salvos na camada bronze. Na camada silver foi realizada a etapa de data quality e verificou-se que, apesar de permitir valor nulos, todos os campos continham dados, conforme evidenciado nas contagens de valores nulos nas tabelas movies e ratings. Não foram encontrados outros problemas com os dados que pudessem comprometer a qualidade da análise. 
+### Carga / Modelagem
+Foi necessário identificar o delimitador do arquivo antes da leitura dos mesmos no formato csv. Inicialmente os dados brutos foram salvos na camada bronze. Na camada silver foi realizada a etapa de data quality e verificou-se que, apesar de permitir valor nulos, todos os campos continham dados, conforme evidenciado nas contagens de valores nulos das tabelas movies e ratings. Não foram encontrados outros problemas com os dados que pudessem comprometer a qualidade da análise. 
 
 Modelo de dados (camadas bronze e silver)
-
 ![Modelo de dados](https://github.com/user-attachments/assets/33939785-ad83-42aa-8c9b-7ef357ee2523)
 
 
-Na camada gold foi realizada a conversão do campo timestamp, que era do tipo número inteiro, para o tipo datetime e a junção entre as tabelas movies (dimensão) e ratings (fato), utilizando a coluna movieId como chave.
+Na camada gold foi realizada a junção entre as tabelas movies (dimensão) e ratings (fato), utilizando a coluna movieId como chave e a conversão do campo timestamp, que era do tipo número inteiro, para o tipo datetime. Após isso foi criada uma tabela gold consolidando as duas tabelas (gold.movies_ratings).
 
 ### Análise
-Posteriormente às etapas de modelagem e carga, os dados foram manipulados via SQL, diretamente no Databricks, para obtenção das respostas formuladas no objetivo do trabalho.
+Posteriormente às etapas de carga e modelagem, os dados foram manipulados via SQL, diretamente no Databricks, para obtenção das respostas às perguntas que foram formuladas no objetivo desse trabalho.
 
 ### Dicionário de Dados
-O dicionário a seguir descreve os dados disponíveis na base, fornecendo informações sobre cada campo, incluindo seu significado, tipo de dado, domínio esperado e possíveis categorias.
+O dicionário a seguir descreve os dados disponíveis na tabela gold.movies_ratings, fornecendo informações sobre cada campo, incluindo seu significado, tipo de dado, domínio esperado e possíveis categorias.
 
 ![Catálogo de dados](https://github.com/user-attachments/assets/11f830f0-90d1-4a79-a6cc-8a8cc02fc690)
 
