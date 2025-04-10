@@ -38,30 +38,37 @@ O catálogo a seguir descreve os dados disponíveis na tabela gold.movies_rating
 
 1. Quais os filmes com maior número de avaliações?
 Na tabela abaixo estão os 5 filmes com o maior número de avaliações.
+
 ![Resp  perg  1](https://github.com/user-attachments/assets/a165d6df-df8e-4124-92e5-2e33583410de)
  
 2. Quais os filmes (títulos) com a melhor avaliação?
 Na tabela abaixo estão os 3 filmes com as melhores avaliações (média das notas).
+
 ![image](https://github.com/user-attachments/assets/565c5374-e0b5-49c5-85fd-90f53a5bb716)
 
 3. Qual o gênero com a melhor avaliação?
 O gênero com a melhor avaliação foi Sci-Fi|War, com média de 4,45.
+
 ![image](https://github.com/user-attachments/assets/70446652-cd87-48f9-87f8-593351824a92)
 
 4. Qual o total de Filmes avaliados?
 O total de filmes avaliados foi 3.615.
+
 ![image](https://github.com/user-attachments/assets/5a95366a-269d-43e4-8c1c-542be05029b0)
  
 5. Qual o total de usuários que avaliaram filmes?
 O total de usuários que avaliaram filmes foi de 2.999.
+
 ![image](https://github.com/user-attachments/assets/7ad44b12-c44d-400a-a16b-b3731fdc644b)
 
-7. Qual o total de avaliações por ano?
+6. Qual o total de avaliações por ano?
 O total de avaliações por ano está no gráfico abaixo. O ano com mais avaliações foi 2000 com 424.406 avaliações.
+
 ![image](https://github.com/user-attachments/assets/a27edefd-53fd-425b-8b7c-f74b210b2267)
 
-9.  Quais os filmes com as piores avaliações?
+7.  Quais os filmes com as piores avaliações?
 Os 10 filmes com as piores avaliações (nota média = 1) estão na tabela abaixo.
+
 ![image](https://github.com/user-attachments/assets/3d70b2c4-8491-462c-b01c-1beef178f887)
 
 ### Autoavaliação
