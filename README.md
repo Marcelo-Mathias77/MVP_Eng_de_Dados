@@ -29,8 +29,8 @@ Uma cópia da análise realizada foi inserida nesse repositório.
 O trabalho original encontra-se no link a seguir: 
 (https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/908816867272057/816507647137833/1974515297805925/latest.html).
 
-### Dicionário de Dados
-O dicionário a seguir descreve os dados disponíveis na tabela gold.movies_ratings, fornecendo informações sobre cada campo, incluindo seu significado, tipo de dado, domínio esperado e possíveis categorias.
+### Catálogo de Dados
+O catálogo a seguir descreve os dados disponíveis na tabela gold.movies_ratings, fornecendo informações sobre cada campo, incluindo seu significado, tipo de dado, domínio esperado e possíveis categorias.
 
 ![Catálogo de dados](https://github.com/user-attachments/assets/11f830f0-90d1-4a79-a6cc-8a8cc02fc690)
 
